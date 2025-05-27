@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+/* MOBILE */
+
+@media screen and (max-width: 1040px) {
+
+    /*cabecalho*/
+    .cabecalho-menu-item {
+        align-items: center;
+        margin-top: auto;
+        font-size: 14px;
+    }
+
+    .cabecalho-logo {
+        display: none;
+    }
+
+    /* Classes Gerais */
+    .conteudo-principal {
+        flex-direction: column;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .conteudo-principal-escrito-titulo {
+        margin: 0 auto;
+    }
+
+    .conteudo-principal-escrito-titulo-subtitulo {
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .conteudo-principal-escrito-botao {
+        margin: 0 auto;
+    }
+
+    .conteudo-secundario {
+        margin: 20px;
+    }
+
+    .conteudo-principal-imagem {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    /* rodape */
+
+    .rodape-imagem {
+        margin: 0 auto;
+        align-items: center;
+    }
+
+}
+
+/* DESKTOP */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient( #ffc074a8, #ffb65db6)
+}
+
+.main {
+    min-width: 300px;
+    max-width: 1000px;
+    
+}
+
+.cabecalho {
+    display: flex;  /* Denomina que o display usado sera flex blox */
+    flex-direction: row; /* Define a direçao dos itens 'row - em linha'*/
+    align-items: center; /* alinha o item 'cabecalho' no 'center' */
+    justify-content: space-around; /* Espaçamento entre os itens */
+    padding: 24px; /*Espaçamento ao redor 'todos os cantos'*/
+    background-color: #31200a;
+    
+
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalho-menu > button {
+    font-family: "Sarala", sans-serif;
+    font-weight: 600;
+    font-size: 18;
+    color: #ffd092;
+    transform: 0.6s;
+    background: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.6s;
+    cursor: pointer;  
+}
+
+.cabecalho-menu-inicio:hover, .cabecalho-menu-saiba:hover {
+        transition-duration: 0.4s;
+        transform: scale(1.05);
+        text-decoration: underline;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 1px solid #31200a;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+}
+
+.conteudo-principal-escrito-titulo {
+  font-family: "Righteous", cursive;
+  font-size: 64px;
+  font-weight: 500;
+  font-style: normal;
+  color: #31200a;
+  font-weight: bold;
+}
+
+.conteudo-principal-escrito-titulo-subtitulo {
+    font-family: "Sarala", sans-serif;
+    font-weight: 400;
+    font-size: 10;
+    color: #31200a;
+    border: none;
+
+}
+
+.conteudo-principal-escrito-botao {
+    font-weight: 500;
+    font-family: "Sarala", sans-serif;
+    background-color: #31200a;
+    width: 180px;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    color: #ffd097;
+    box-shadow: 2px 2px 2px #25180794;
+    font-size: 18px;
+    transition: 0.6s;
+    cursor: pointer;
+    
+}
+
+.conteudo-principal-escrito-botao:hover {
+    background-color: #160f05;
+        transition-duration: 0.4s;
+        transform: scale(1.05);
+}
+
+.conteudo-principal-imagem:hover {
+    transition-duration: 0.6s;
+    transform: scale(1.05) rotate(4deg);
+        
+}
+
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column; /*Lihas em coluna uma em baixo d outra*/
+    align-items: center; /*alinha os itens no centro*/
+    gap: 30px; /*espaçamento entre as linhas*/
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 1px solid #31200a;
+    padding-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #31200a;
+    font-weight: bold;
+}
+
+.conteudo-secundario-paragrafo {
+    color: #31200a;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+ .conteudo-principal-imagem {
+    transition: 0.6s;
+    scale: 80%;
+ }
+
+.rodape {
+    padding: 30px;
+    border-top: 1px solid #31200a;
+}
+
+.rodape-imagem {
+    height: 55px;
+    display: block;
+    margin: 0px auto;
+
+}
+
