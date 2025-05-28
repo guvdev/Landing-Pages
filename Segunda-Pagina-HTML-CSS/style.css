@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Satisfy&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    height: auto;
+    font-family: "Inter", sans-serif;
+}
+
+.navegacao {
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 20px;
+    padding-right: 90px;
+    padding-left: 90px;
+    font-size: 18px;
+}
+
+.navegacao-menu {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.navegacao-pesquisar {
+  outline: none;
+  border: 2px solid #daba2c;
+  border-radius: 70px;
+  overflow: hidden;
+}
+
+.navegacao-pesquisar input {
+  display: flex;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+.navegacao a {
+    color: rgba(255, 255, 255, 0.555);
+    margin: auto;
+}
+
+a[href="#"]:hover {
+    color: #daba2c;
+    scale: 1.1;
+    font-weight: bold;
+}
+
+a[href="#"] {
+    transition-duration: 0.3s;
+}
+
+body {
+    background-image: url('assets/bg1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+main {
+    height: 78vh;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.541);
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
