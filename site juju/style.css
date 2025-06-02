@@ -3,4 +3,92 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    flex-wrap: wrap;
+    
+}
+
+header {
+    width: 100%;
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px 15px;
+  box-shadow: 0 0 10px #00000044;
+  justify-content: center;
+}
+
+.search-container input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.search-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.login {
+    display: flex;
+    gap: 40px; /* ou o valor que desejar */
+    align-items: center;
+    color: white;
+}
+
+.login a {
+    color: rgb(0, 0, 0);
+}
+
+.menu-bar {
+    padding: 10px 30px;
+    
+}
+
+.menu-bar ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+body {
+    background-color: rgba(182, 40, 211, 0.589);
 }
