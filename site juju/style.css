@@ -31,27 +31,46 @@ header {
   display: flex;
   align-items: center;
   border-radius: 30px;
-  padding: 10px 15px;
-  box-shadow: 0 0 5px #00000044;
-  justify-content: center;
+  padding: 12px 20px;
+  box-shadow: 0 4px 12px #00000025;
+  background-color: #fff;
+  width: 500px;
+  max-width: 90%;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-container:focus-within {
+  box-shadow: 0 0 10px #ff4fcf80;
 }
 
 .search-container input {
   background: transparent;
   border: none;
   outline: none;
-  color: #000000;
-  padding: 5px 10px;
+  color: #333;
+  padding: 8px 12px;
   font-size: 16px;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.search-container input::placeholder {
+  color: #888;
 }
 
 .search-container button {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 5px;
+  padding: 8px;
   display: flex;
-  
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.search-container button:hover {
+  transform: scale(1.1);
 }
 
 .botao-login {
@@ -107,7 +126,13 @@ header {
     font-weight: 600;
     font-size: 13px;
     text-transform: uppercase;
+    transition-duration: 0.3s;
 }
+
+.menu-bar ul li a:hover {
+    color: rgb(61, 61, 61);
+}
+
 
 .logo {
     max-height: 50px;
@@ -115,4 +140,6 @@ header {
 
 body {
     background-color: rgba(182, 40, 211, 0.589);
+    height: 100vh;
+    margin: 0;
 }
