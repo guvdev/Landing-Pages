@@ -205,7 +205,7 @@ body {
 
  .conteudo-principal-imagem {
     transition: 0.6s;
-    scale: 80%;
+    padding-top: 22vh;
  }
 
 .rodape {
